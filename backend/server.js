@@ -51,9 +51,20 @@ app.use("/api/journals", journalRouter);
 
 // Serve static files from the React app (production only)
 if (process.env.NODE_ENV === "production") {
-  app.get("/*", (req, res) => {
-    res.sendFile(path.join(__dirname, "client/build", "index.html"));
-  });
+  const clientBuildPath = path.join(__dirname, "client", "build");
+
+  // Only use if folder exists
+  if (existsSync(clientBuildPath)) {
+    app.use(express.static(clientBuildPath));
+
+    // Catch-all fallback middleware
+    app.use((req, res) => {
+      res.sendFile(path.join(clientBuildPath, "index.html"));
+    });
+  } else {
+    console.warn("Warning: client/build folder does not exist");
+  }
+}
 }
 
 app.listen(PORT, () => {
