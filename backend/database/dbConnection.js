@@ -1,9 +1,9 @@
 import mongoose from "mongoose";
+import dotenv from "dotenv";
+dotenv.config(); // <-- must be first
 
 export const connection = () => {
-  mongoose
-    .connect("mongodb://127.0.0.1:27017/MVC")
-    .then(() => {
+mongoose.connect(process.env.MONGODB_URI)    .then(() => {
       console.log("database connected");
     })
     .catch((err) => {

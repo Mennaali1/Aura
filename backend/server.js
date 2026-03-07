@@ -4,11 +4,14 @@ import path from "path";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
 import { fileURLToPath } from "url";
+<<<<<<< HEAD
 import { existsSync } from "fs";
 
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
+=======
+>>>>>>> 9f1c1e5 (fixing routes)
 // Load environment variables
 dotenv.config();
 
@@ -17,19 +20,21 @@ const PORT = process.env.PORT || 5000;
 
 // Database connection
 mongoose
-  .connect(process.env.MONGODB_URI)
-  .then(() => console.log("Connected to MongoDB"))
-  .catch((err) => console.error("MongoDB connection error:", err));
+  .connect(process.env.MONGODB_URI )
+  .then(() => console.log("Connected to MongoDB ATLAS"))
+  .catch((err) => console.error("MongoDB ATLAS connection error:", err));
 
 // Middleware
 app.use(cors());
 app.use(express.json());
 
 // Only serve static files in production
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 if (process.env.NODE_ENV === "production") {
   app.use(express.static(path.join(__dirname, "client/build")));
 }
-
 // Import routes
 import userRouter from "./src/modules/user/user.router.js";
 
