@@ -5,7 +5,7 @@ import Link from "next/link";
 import axios from "axios";
 
 // API configuration
-const API_BASE_URL = process.env.BACKEND_URL || "http://localhost:5000";
+const API_BASE_URL = process.env.NEXT_PUBLIC_BACKEND_URL;
 
 export default function Register() {
   const [formData, setFormData] = useState({
