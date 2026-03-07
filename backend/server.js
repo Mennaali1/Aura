@@ -65,7 +65,7 @@ if (process.env.NODE_ENV === "production") {
     console.warn("Warning: client/build folder does not exist");
   }
 }
-}
+
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
