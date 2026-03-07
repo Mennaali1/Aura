@@ -3,12 +3,13 @@ import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import axios from "axios";
 
 // API configuration for backend communication
-const API_BASE_URL = process.env.BACKEND_URL || "http://localhost:5000";
+// const NEXT_PUBLIC_BACKEND_URL = process.env.BACKEND_URL ;
+
 
 // Fetch journals from backend API
 async function fetchJournals() {
   const token = localStorage.getItem("token");
-  const response = await axios.get(`${API_BASE_URL}/api/journals`, {
+  const response = await axios.get(`${NEXT_PUBLIC_BACKEND_URL}/api/journals`, {
     headers: { Authorization: `Bearer ${token}` },
   });
   return response.data;
@@ -17,7 +18,7 @@ async function fetchJournals() {
 // Create new journal entry
 async function createJournal(data) {
   const token = localStorage.getItem("token");
-  const response = await axios.post(`${API_BASE_URL}/api/journals`, data, {
+  const response = await axios.post(`${NEXT_PUBLIC_BACKEND_URL}/api/journals`, data, {
     headers: { Authorization: `Bearer ${token}` },
   });
   return response.data;
@@ -26,7 +27,7 @@ async function createJournal(data) {
 // Update journal entry
 async function updateJournal({ id, data }) {
   const token = localStorage.getItem("token");
-  const response = await axios.put(`${API_BASE_URL}/api/journals/${id}`, data, {
+  const response = await axios.put(`${NEXT_PUBLIC_BACKEND_URL}/api/journals/${id}`, data, {
     headers: { Authorization: `Bearer ${token}` },
   });
   return response.data;
@@ -35,7 +36,7 @@ async function updateJournal({ id, data }) {
 // Delete journal entry
 async function deleteJournal(id) {
   const token = localStorage.getItem("token");
-  await axios.delete(`${API_BASE_URL}/api/journals/${id}`, {
+  await axios.delete(`${NEXT_PUBLIC_BACKEND_URL}/api/journals/${id}`, {
     headers: { Authorization: `Bearer ${token}` },
   });
 }
