@@ -1,0 +1,143 @@
+{
+  "techniques": [
+    {
+      "id": "5-4-3-2-1",
+      "name": "5-4-3-2-1 Technique",
+      "description": "Use your five senses to ground yourself in the present moment",
+      "steps": [
+        "Name 5 things you can SEE around you",
+        "Name 4 things you can TOUCH",
+        "Name 3 things you can HEAR",
+        "Name 2 things you can SMELL",
+        "Name 1 thing you can TASTE"
+      ],
+      "benefits": "Helps reduce anxiety, panic attacks, and overwhelming emotions"
+    },
+    {
+      "id": "box-breathing",
+      "name": "Box Breathing (4-4-4-4)",
+      "description": "A simple breathing technique to calm your nervous system",
+      "steps": [
+        "Breathe in slowly for 4 counts",
+        "Hold your breath for 4 counts",
+        "Breathe out slowly for 4 counts",
+        "Hold your breath out for 4 counts",
+        "Repeat this cycle 4-8 times"
+      ],
+      "benefits": "Reduces stress, improves focus, and activates relaxation response"
+    },
+    {
+      "id": "mindful-breathing",
+      "name": "Mindful Breathing",
+      "description": "Focus your attention on your breath to center yourself",
+      "steps": [
+        "Find a comfortable position and close your eyes",
+        "Focus on the sensation of breathing",
+        "Notice the rise and fall of your chest or abdomen",
+        "If your mind wanders, gently return focus to your breath",
+        "Continue for 5-10 minutes"
+      ],
+      "benefits": "Improves emotional regulation, reduces stress, and increases mindfulness"
+    },
+    {
+      "id": "safe-place",
+      "name": "Safe Place Visualization",
+      "description": "Create a mental sanctuary where you feel calm and secure",
+      "steps": [
+        "Close your eyes and imagine a place where you feel completely safe",
+        "Use all your senses - what do you see, hear, smell, feel?",
+        "Add details that make this place more real and comforting",
+        "Imagine yourself there, feeling peaceful and protected",
+        "Stay in this place for a few minutes, breathing deeply"
+      ],
+      "benefits": "Provides emotional refuge, reduces anxiety, and promotes inner peace"
+    },
+    {
+      "id": "body-scan",
+      "name": "Body Scan Meditation",
+      "description": "Progressive relaxation technique to release tension and increase body awareness",
+      "steps": [
+        "Lie down or sit comfortably in a quiet space",
+        "Start at your toes and slowly move attention up through your body",
+        "Notice any tension, warmth, or sensations without judgment",
+        "Breathe into areas of tension and imagine them releasing",
+        "Continue until you've scanned your entire body to the top of your head",
+        "Rest for a few moments before slowly returning to the present"
+      ],
+      "benefits": "Releases physical tension, improves body awareness, and promotes deep relaxation"
+    },
+    {
+      "id": "progressive-muscle",
+      "name": "Progressive Muscle Relaxation",
+      "description": "Systematically tense and relax muscle groups to reduce physical stress",
+      "steps": [
+        "Find a comfortable seated or lying position",
+        "Start with your feet - tense the muscles for 5 seconds",
+        "Release the tension and notice the feeling of relaxation",
+        "Move up to your calves, thighs, abdomen, hands, arms, shoulders, and face",
+        "For each muscle group, tense for 5 seconds then release for 10 seconds",
+        "Finish by taking three deep breaths and stretching gently"
+      ],
+      "benefits": "Reduces muscle tension, lowers stress hormones, and improves sleep quality"
+    },
+    {
+      "id": "grounding-objects",
+      "name": "Physical Grounding with Objects",
+      "description": "Use physical objects to anchor yourself in the present moment",
+      "steps": [
+        "Choose a small object you can hold (stone, stress ball, textured fabric)",
+        "Focus all your attention on the object's physical properties",
+        "Notice its temperature, weight, texture, and shape",
+        "Describe the object in detail to yourself or out loud",
+        "Move it between your hands and explore different sensations",
+        "Continue for 2-3 minutes or until you feel more grounded"
+      ],
+      "benefits": "Provides tactile distraction from anxiety and anchors awareness to the present"
+    },
+    {
+      "id": "478-breathing",
+      "name": "4-7-8 Breathing Technique",
+      "description": "A powerful breathing pattern to activate the relaxation response quickly",
+      "steps": [
+        "Sit comfortably with your back straight",
+        "Place the tip of your tongue against the ridge behind your upper teeth",
+        "Exhale completely through your mouth making a whoosh sound",
+        "Close your mouth and inhale quietly through your nose for 4 counts",
+        "Hold your breath for 7 counts",
+        "Exhale completely through your mouth for 8 counts making a whoosh sound",
+        "Repeat the cycle 3-4 times"
+      ],
+      "benefits": "Rapidly calms the nervous system, reduces anxiety, and helps with sleep"
+    }
+  ],
+  "tips": [
+    {
+      "id": "practice-regularly",
+      "icon": "🕐",
+      "title": "Practice Regularly",
+      "description": "Try to practice grounding techniques daily, even when you're feeling good.",
+      "color": "blue"
+    },
+    {
+      "id": "find-what-works",
+      "icon": "🎯",
+      "title": "Find What Works",
+      "description": "Different techniques work for different people and situations.",
+      "color": "green"
+    },
+    {
+      "id": "be-patient",
+      "icon": "🌱",
+      "title": "Be Patient",
+      "description": "Grounding techniques are skills that improve with practice.",
+      "color": "purple"
+    },
+    {
+      "id": "be-kind",
+      "icon": "💝",
+      "title": "Be Kind to Yourself",
+      "description": "If your mind wanders during practice, gently guide it back without judgment.",
+      "color": "pink"
+    }
+  ]
+}

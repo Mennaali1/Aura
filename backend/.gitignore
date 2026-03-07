@@ -1,0 +1,89 @@
+# ========================================
+<<<<<<< HEAD
+# AURA Project Root .gitignore
+=======
+# Backend .gitignore
+>>>>>>> e60458c1 (migrating DB to Atlas)
+# ========================================
+
+# Environment variables (CRITICAL - DO NOT COMMIT)
+.env
+.env.*
+!.env.example
+<<<<<<< HEAD
+.env.local
+.env.development
+.env.production
+.env.test
+=======
+>>>>>>> e60458c1 (migrating DB to Atlas)
+
+# Dependencies
+node_modules/
+package-lock.json
+
+<<<<<<< HEAD
+# Build outputs
+dist/
+build/
+out/
+
+=======
+>>>>>>> e60458c1 (migrating DB to Atlas)
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+<<<<<<< HEAD
+yarn-error.log*
+lerna-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
+# Documentation that may contain sensitive info
+SESSION_COMPLETE_SUMMARY.md
+=======
+
+# Build
+dist/
+build/
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Uploads (if any)
+uploads/
+temp/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Test coverage
+coverage/
+.nyc_output/
+>>>>>>> e60458c1 (migrating DB to Atlas)
+
