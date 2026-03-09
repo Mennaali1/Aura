@@ -5,7 +5,8 @@ import Link from "next/link";
 import axios from "axios";
 
 // API configuration
-const API_BASE_URL = process.env.NEXT_PUBLIC_BACKEND_URL;
+const API_BASE_URL = "https://aura-backend-11z6.onrender.com";
+;
 
 export default function Register() {
   const [formData, setFormData] = useState({
