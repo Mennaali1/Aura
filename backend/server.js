@@ -4,7 +4,6 @@ import path from "path";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
 import { fileURLToPath } from "url";
-import { existsSync } from "fs";
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -21,8 +20,6 @@ app.use(express.json());
 
 // Only serve static files in production
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
 if (process.env.NODE_ENV === "production") {
   app.use(express.static(path.join(__dirname, "client/build")));
 }
@@ -48,21 +45,10 @@ app.use("/api/journals", journalRouter);
 
 // Serve static files from the React app (production only)
 if (process.env.NODE_ENV === "production") {
-  const clientBuildPath = path.join(__dirname, "client", "build");
-
-  // Only use if folder exists
-  if (existsSync(clientBuildPath)) {
-    app.use(express.static(clientBuildPath));
-
-    // Catch-all fallback middleware
-    app.use((req, res) => {
-      res.sendFile(path.join(clientBuildPath, "index.html"));
-    });
-  } else {
-    console.warn("Warning: client/build folder does not exist");
-  }
+  app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname, "client/build", "index.html"));
+  });
 }
-
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);

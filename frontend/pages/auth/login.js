@@ -5,7 +5,8 @@ import Link from "next/link";
 import axios from "axios";
 
 // API configuration
-const API_BASE_URL = process.env.BACKEND_URL || "http://localhost:5000";
+const API_BASE_URL =  "https://aura-backend-11z6.onrender.com";
+ ;
 
 export default function Login() {
   const [formData, setFormData] = useState({

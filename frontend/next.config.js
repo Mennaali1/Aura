@@ -12,7 +12,7 @@ const nextConfig = {
 
   // Environment variables for backend API
   env: {
-    BACKEND_URL: process.env.BACKEND_URL || "http://localhost:5000",
+    NEXT_PUBLIC_BACKEND_URL: "https://aura-backend-11z6.onrender.com",
   },
 
   // Enable strict mode for better development experience

@@ -3,7 +3,7 @@ import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import axios from "axios";
 
 // API configuration for backend communication
-// const NEXT_PUBLIC_BACKEND_URL = process.env.BACKEND_URL ;
+const NEXT_PUBLIC_BACKEND_URL = "https://aura-backend-11z6.onrender.com";
 
 
 // Fetch journals from backend API

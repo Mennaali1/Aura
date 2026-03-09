@@ -26,7 +26,7 @@ export default function EmotionsDashboard() {
     queryFn: async () => {
       const token = localStorage.getItem("token");
       const response = await fetch(
-        `http://localhost:5000/api/emotions?period=${filterPeriod}`,
+        `https://aura-backend-11z6.onrender.com/api/emotions?period=${filterPeriod}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -47,7 +47,7 @@ export default function EmotionsDashboard() {
     queryKey: ["emotionStats"],
     queryFn: async () => {
       const token = localStorage.getItem("token");
-      const response = await fetch("http://localhost:5000/api/emotions/stats", {
+      const response = await fetch("https://aura-backend-11z6.onrender.com/api/emotions/stats", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -65,7 +65,7 @@ export default function EmotionsDashboard() {
   const saveEmotionMutation = useMutation({
     mutationFn: async (emotionData) => {
       const token = localStorage.getItem("token");
-      const response = await fetch("http://localhost:5000/api/emotions", {
+      const response = await fetch("https://aura-backend-11z6.onrender.com/api/emotions", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
