@@ -6,12 +6,6 @@ import dotenv from "dotenv";
 import { fileURLToPath } from "url";
 import { existsSync } from "fs";
 
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-// Load environment variables
-dotenv.config();
-
 const app = express();
 const PORT = process.env.PORT || 5000;
 
