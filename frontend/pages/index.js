@@ -8,12 +8,11 @@ import EmotionsSection from "../components/EmotionsSection";
 import Journaling from "../components/Journaling";
 import GroundingTechniques from "../components/GroundingTechniques";
 import TherapyResources from "../components/TherapyResources";
-const NEXT_PUBLIC_BACKEND_URL = "https://aura-backend-11z6.onrender.com";
 
 // Fetch emotions data from backend API
 async function fetchEmotions() {
   const response = await fetch(
-    `${NEXT_PUBLIC_BACKEND_URL}/api/emotions`
+    `${process.env.NEXT_PUBLIC_API_URL}/api/emotions`
   );
   if (!response.ok) {
     throw new Error("Failed to fetch emotions");
@@ -90,7 +89,7 @@ export default function Home({ initialEmotions = [] }) {
 export async function getServerSideProps() {
   try {
     // Fetch emotions data on the server for faster initial load
-    const backendUrl = NEXT_PUBLIC_BACKEND_URL ;
+    const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL ;
     const response = await fetch(`${backendUrl}/api/emotions`);
 
     if (!response.ok) {
