@@ -54,7 +54,7 @@ app.use("/api/journals", journalRouter);
 
 // Serve static files from the React app (production only)
 if (process.env.NODE_ENV === "production") {
-  app.get("(.*)",(req, res) => {
+  app.get((req, res) => {
     res.sendFile(path.join(__dirname, "client/build", "index.html"));
   });
 }
